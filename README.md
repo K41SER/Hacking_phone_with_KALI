@@ -25,7 +25,8 @@ This method consists in uploading the file to a server that is hosted by the lin
 Now, we need to copy the malicoius file to the apache directory, in order for making it accesible on the internet.
 
 ```scp virus.apk /var/www/html/```
-
-### Ch
+ **Verify if the file has been uploaded with this command**
+ 
+ ```cd /var/www/html/ & ls```
 
 
