@@ -19,10 +19,10 @@ This method consists in uploading the file to a server that is hosted by the lin
 
 **If you see as an output that it is offline, then turn it on with the following command.**
 
-##### `sudo service apache2 start`
+```sudo service apache2 start```
 
 ### Copying the files to the apache online server
 Now, we need to copy the malicoius file to the apache directory, in order for making it accesible on the internet.
-##### `scp virus.apk /var/www/html/`
+```scp virus.apk /var/www/html/```
 
 
