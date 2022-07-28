@@ -13,9 +13,12 @@ The first thing that we need to make, is to create a malicious file with the cor
 
 
 ## Option 1)Uploading the file to an apache server.
-This method consists in unploading the file to a server that is hosted by the linux machine. You can make shure if it is running by entering this command.
+This method consists in uploading the file to a server that is hosted by the linux machine. You can make shure if it is running by entering this command.
 #### `sudo service apache2 status`
-**If you see as an output that it is offline, then turn it on with the following command**
+**If you see as an output that it is offline, then turn it on with the following command.**
 #### `sudo service apache2 start`
+### Copying the files to the apache online server
+Now, we need to copy the malicoius file to the apache directory, in order for making it accesible on the internet.
+#### `scp virus.apk /var/www/html/`
 
 
