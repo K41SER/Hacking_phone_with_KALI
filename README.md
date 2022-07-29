@@ -1,5 +1,5 @@
 # How to hack a smarphone with Kali Linux (complete guide)
-Kali linux is an OS that is focused on pentesting and ethical hacking. It if totally free and open source. In this guide you will see how you can test to gain acces to a phone with some pentesting tools. ONLY USE THIS FOR TESTING PURPOSES. 
+Kali linux is an OS that is focused on pentesting and ethical hacking. It if totally free and open source. In this guide you will see how you can test to gain acces to a phone with some pentesting tools. ONLY USE THIS FOR TESTING PURPOSES. **A file with all the configuration done will be uploaded in the future**
 
 **More info at https://www.kali.org/**
 
