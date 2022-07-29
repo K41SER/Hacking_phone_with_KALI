@@ -10,7 +10,7 @@ The first thing that we need to make, is to create a malicious file with the cor
 **You can know th IP adress of your device by entering ```ifconfig```**
 
 ## 2) Uploading the file to an apache server.
-This method consists in uploading the file to a server that is hosted by the linux machine. You can make shure if it is running by entering this command.
+This method consists in uploading the file to a server that is hosted by the linux machine. You can make sure if it is running by entering this command.
 
 ```sudo service apache2 status```
 
