@@ -49,5 +49,5 @@ Now, we need to copy the malicoius file to the apache directory, in order for ma
  
  **The link should look something like this; 192.168.0.152/virus.apk**
 
-##**The process is finally done. You can now try atacking the phone with the console. Type ```help``` to list all the commands aviable**
+## **The process is finally done. You can now try atacking the phone with the console. Type ```help``` to list all the commands aviable**
 
